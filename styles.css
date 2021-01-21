@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0b0a36;
+}
+
+h1{
+    font-weight: 500;
+    font-size: 3.4rem;
+    line-height: .9;
+}
+
+h2{
+    color: white;
+    font-weight: normal;
+}   
+
+section {
+    padding: 0 5%;
+    max-width: 1340px;
+}
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    text-shadow: .1em .1em .4em #0b0a36
+}
+
+.hero-title {
+    font-family: 'Roboto Slab', serif; 
+    color: white;
+    margin: 0;
+    padding: 10% 0 0 0;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    padding: 10px 0;
+    line-height: 1.4;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(images/VGS-Hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero-content {
+    position: relative;
+    width: 35vw;
+    max-width: 800px;
+}
+
+.hero-button {
+    padding:0.35em 1.2em;
+    background-color: transparent;
+    border: 0.15em solid #00d4ff;
+    color:  #00d4ff;
+    text-align: center;
+    text-decoration: none;
+    background-color: none;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: none;
+    text-decoration:none;
+}
+.hero-button:hover {
+    background-color: #00d4ff;
+    color: #0b0a36;
+}
+/* 
+To Do
+Get assets for BG, characters and news
+get colors for magenta, dark grey
+get copy
+
+
+ box-sizing: border-box;
+text-decoration:none;
+ font-family:'Roboto',sans-serif;
+ font-weight:300;
+ color:#FFFFFF;
+ text-align:center;
+ transition: all 0.2s;
+*/
+
