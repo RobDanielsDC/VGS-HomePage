@@ -4,13 +4,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #0b0a36;
 }
 
 h1{
-    font-weight: 500;
+    font-weight: 700;
     font-size: 3.4rem;
     line-height: .9;
+    font-family: 'Roboto Slab', serif; 
+
 }
 
 h2{
@@ -20,18 +21,23 @@ h2{
 
 section {
     padding: 0 5%;
-    max-width: 1340px;
 }
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*           HERO           */
 
 .hero {
     position: relative;
     width: 100vw;
-    height: 80vh;
-    text-shadow: .1em .1em .4em #0b0a36
+    height: 100vh;
+    text-shadow: .1em .1em .4em #0b0a36;
+    background-color: #0b0a36;
 }
 
 .hero-title {
-    font-family: 'Roboto Slab', serif; 
     color: white;
     margin: 0;
     padding: 10% 0 0 0;
@@ -53,7 +59,7 @@ section {
     background: url(images/VGS-Hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: right center;
 }
 
 .hero-content {
@@ -73,26 +79,67 @@ section {
     display: inline-block;
     font-size: 1.1rem;
     font-weight: bold;
-    cursor: none;
     text-decoration:none;
 }
 .hero-button:hover {
     background-color: #00d4ff;
     color: #0b0a36;
 }
+
+/*           CHARACTERS           */
+
+.character-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.character-box {
+    padding-right: 5%;
+}
+.character-title {
+    margin-bottom: 0;
+}
+.character-text {
+    margin-top: 0;
+}
+
+.character-button {
+    padding:0.35em 1.2em;
+    background-color: transparent;
+    border: 0.15em solid #ec2ab3;
+    color:  #ec2ab3;
+    text-align: center;
+    text-decoration: none;
+    background-color: none;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration:none;
+}
+.character-button:hover {
+    background-color: #ec2ab3;
+    color: white;
+}
+
+
 /* 
-To Do
-Get assets for BG, characters and news
-get colors for magenta, dark grey
-get copy
+.news {
+    background-image: ;
+}
+
+magenta: #ec2ab3
+cyan change to? #00c4dc
+dark grey #1f282e OR #001d2f
 
 
- box-sizing: border-box;
-text-decoration:none;
- font-family:'Roboto',sans-serif;
- font-weight:300;
- color:#FFFFFF;
- text-align:center;
- transition: all 0.2s;
+Play games with us
+
+Show off your hoard
+
+see whats brewing.
+
+buy & sell in our market
+
+
 */
 
