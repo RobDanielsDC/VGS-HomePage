@@ -6,7 +6,6 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     color: #1f282e;
-
 }
 
 h1{
@@ -15,19 +14,16 @@ h1{
     line-height: 1.1;
     font-family: 'Roboto Slab', serif; 
     margin: 0;
-
 }
 
 h2{
     font-weight: normal;
     font-size: 1.1rem; 
     line-height: 1.4;
-
 }   
 
 h3{ 
     font-size: 1rem;
-
 }
 
 p{
@@ -63,7 +59,6 @@ img {
     padding: 15% 0 0 0;
     font-size: 4.1rem;
     line-height: 3.9rem;
-
 }
 
 .hero-subtitle {
@@ -77,7 +72,6 @@ img {
     width: 40vw;
     max-width: 800px;
     padding: 0 5%;
-
 }
 
 .hero-button {
@@ -106,14 +100,16 @@ img {
     grid-gap: 1%;
     grid-auto-rows: auto;
     margin: 0 0 1% 0;
+}
 
+.character-section {
+    margin: 0;
 }
 
 .character-box {
     padding-right: 5%;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .character-title {
@@ -150,13 +146,11 @@ img {
 .news-section {
     background: url(images/VGS-PixelsBG.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 }
-
 
 .hero-content, .character-content, .news-content {
     margin: 0 2%;
-
 }
 
 .news-grid {
@@ -172,7 +166,7 @@ img {
 .stats-section {
     background: url(images/VGS-PixelsBG.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     margin: 4% 0;
     text-align: center;
 }
@@ -195,14 +189,12 @@ img {
 .stats-title {
     font-size: 1.4rem;
     margin: 0;
-
 }
 
 .stats-text {
     font-size: 1rem;
     font-weight: bold;
     margin: 0;
-
 }
 
 /*     max width means this applies at less than x      */
@@ -216,28 +208,29 @@ img {
     html {
         font-size: 90%;
     }
-
+ 
     h1{
         font-weight: 700;
         font-size: 2rem;
         line-height: 1.1;
     }
 
+    img{
+        margin-top: 5%;
+    }
+
     h3{ 
         font-size: 1.2rem;
-
     }
 
     p{
         font-size: 1.1rem;
         line-height: 1.1;
-
     }
 
     .news-grid {
         grid-template-columns: repeat(1, minmax(12rem, 1fr));
         grid-gap: .5% ;
-
     }
 
     .hero {
@@ -254,9 +247,8 @@ img {
     .hero-title {
         font-weight: 700;
         font-size: 2.8rem;
-        line-height: 1.1;  
-        text-align: center;
-  
+        line-height: 1;  
+       /* text-align: center; */
     }
     
     .hero-button, .character-button {
@@ -266,33 +258,41 @@ img {
 
     .character-title {
         line-height: 1.5;
+    }
+
+    .news-grid, .character-grid {
+        display: block;
+    }
+
+
+   .news-section, .stats-section {
+        margin: 5% 0;
+        background-size: auto;
+    }
+
+    .news-section {
+        background-position: 0% 0%;
+
+    }
+
+    .character-heading{
+        padding: 5% 0 0 0;
+    }
+
+    .stats-content {
+        flex-wrap: wrap;
+        padding: 1%;
+    }
+
+    .stats-heading-box, .stats-container-2 {
+        width: 100vw;
+        padding: 5%;
 
     }
 
 }
 
 /*
-
-.news-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
-    grid-template-columns: repeat(3, minmax(1fr, 3fr));
-    grid-gap: 1%;
-}
-
-    grid-template-columns: repeat(3, [col-start] 1fr);
-
-.news-box-1 {
-    grid-column: col-start / span 1;
-}
-.news-box-2 {
-    grid-column: col-start 2 / span 1;
-}
-.news-box-3 {
-    grid-column: col-start 3 / span 1;
-}
-
-
 
 colour palette
 
